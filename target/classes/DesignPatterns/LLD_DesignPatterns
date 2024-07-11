@@ -1,0 +1,44 @@
+
+LLD = UML, Data Structures, Database schema design, OOP, Design Patterns, Machine coding, SOLID;
+
+HLD = Load Balancing, Arch Design, Distributed system, Microservices, Consistent Hashing, SQL vs NoSQL, Transactions, Caching
+
+LLD defines the framework for implementing HLD
+
+OOP - 4 pillars - Abstraction, Encapsulation, Inheritance, Polymorphism (Run time and Compile time)
+
+Design Patterns - Proven and Tested solutions for Recurring problems
+
+SOLID
+1. Single Responsibility Principle -
+2. Open - Close Principle
+3. Liskov Substitution Principle
+4. Interface Segregation Principle
+5. Dependency Inversion Principle
+
+3 Categories of Design Patterns - Creational, Structural, Behavioral
+
+https://medium.com/@thecodebean
+https://medium.com/@pvmicse14/exploring-different-patterns-in-low-level-design-lld-with-java-examples-5c95daf45d34
+
+Creational Patterns - related to creation of objects; Flexible and Efficient creation of objects; Abstract the instantiation process;
+1. Singleton Pattern - private constructor - https://medium.com/@thecodebean/singleton-design-pattern-implementation-in-java-1fba4ecc959f
+2. Prototype Pattern - .clone() -  https://medium.com/@thecodebean/prototype-design-pattern-implementation-in-java-b4b900f1ad9a
+2. Factory Pattern - Product/Machine - https://medium.com/@thecodebean/factory-design-pattern-implementation-in-java-bd16ebb012e2
+3. Abstract Factory  - More than 1 factory
+3. Builder Pattern - .build() - https://medium.com/@thecodebean/builder-design-pattern-implementation-in-java-6adc6fd99ee0
+
+Structural Patterns - related to how objects join together to form the complex system structure; Make system flexible/efficient/scalable;
+1. Adapter Pattern - PayPal, Stripe; https://medium.com/@thecodebean/adapter-design-pattern-implementation-in-java-72f4a19af3c1
+2. Composite Pattern -
+3. Proxy Pattern - Image Load; https://medium.com/@thecodebean/proxy-design-pattern-implementation-in-java-450c02898a21
+4. Bridge Pattern -
+5. Decorator Pattern -
+6. Flyweight Pattern -
+
+Behavioral Patterns - related to the communication b/w objects; Flexible and Efficient Flow of Control; Proper object responsibilities;
+1. Observer Pattern - Subject/Observer -
+2. Strategy Pattern - Switch Between Difficulty modes -
+3. Command Pattern -
+
+

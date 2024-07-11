@@ -1,0 +1,11 @@
+
+w
+java:S1104"UMake firstName a static final constant or non-public and provide accessors if needed.(ßæÆÑýÿÿÿÿ8½–ˆÕ¸1
+p
+java:S1104	"TMake lastName a static final constant or non-public and provide accessors if needed.(¿žü8½–ˆÕ¸1
+l
+java:S1104
+"OMake age a static final constant or non-public and provide accessors if needed.(×Áò¿8½–ˆÕ¸1
+{	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(á¬¸¾úÿÿÿÿ8¾–ˆÕ¸1
+£
+java:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(âï£‡üÿÿÿÿ8¡«”Õ¸1
