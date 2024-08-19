@@ -1,10 +1,14 @@
 package CoreJava;
 
+import lombok.Data;
+
 import java.util.Arrays;
 import java.util.Comparator;
 
+@Data
 class Point implements Comparable<Point>{
 
+    public static Comparator<Point> MyComparator2 = Comparator.comparing(Point::getX);
     int x;
     int y;
 
@@ -35,11 +39,13 @@ public class ComparatorAndComparable {
         String[] s1 = {"GFG", "JKL"};
         String[] s2 = {"gfg", "jkl"};
 
-        Point[] p1 = {new Point(1,2), new Point(1,3)};
+        Point[] p1 = {new Point(4,2), new Point(2,3)};
         Point[] p2 = {new Point(2,2), new Point(2,3)};
 
+        Arrays.sort(p1, Point.MyComparator2);
+        Arrays.stream(p1).forEach(a -> System.out.print(a.x));
 
-        System.out.println(Arrays.equals(p1,p2, new MyComparator()));
+       // System.out.println(Arrays.equals(p1,p2, new MyComparator()));
 
        // Comparable<String> c = (ss1, ss2) -> ss1.compareTo(ss2);
 

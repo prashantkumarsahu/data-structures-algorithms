@@ -1,4 +1,4 @@
-package ArraysClass;
+package src.ArraysClass;
 
 import java.util.Arrays;
 
@@ -15,7 +15,7 @@ public class ArraysMethods {
           System.out.println(Arrays.compare(a,b));
 //        System.out.println(Arrays.compareUnsigned(a,b));
 //        System.out.println(Arrays.copyOf(a,2));
-//        System.out.println(Arrays.copyOfRange(a,0,1));
+//        System.out.println(Arrays.copyOfRange(a,0,1)); // to create subarray of array a from index 0 to 1
 //
 //        System.out.println(Arrays.deepEquals());
 //

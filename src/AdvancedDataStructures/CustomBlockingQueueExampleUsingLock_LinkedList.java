@@ -8,6 +8,7 @@ import java.util.concurrent.locks.ReentrantLock;
 
 public class CustomBlockingQueueExampleUsingLock_LinkedList<T> {
 
+    // nothing but LinkedBlockingQueue
     private ReentrantLock lock = new ReentrantLock();
     private Condition putCondition = lock.newCondition();
     private Condition takeCondition = lock.newCondition();
@@ -35,7 +36,7 @@ public class CustomBlockingQueueExampleUsingLock_LinkedList<T> {
                     ex.printStackTrace();
                 }
             }
-            T data = queue.poll();
+            T data = queue.poll(); // no need to keep track of takeIndex unlike Array impl;
             System.out.println("Taking out from queue: " + data);
             // If queue was full, signal to put that queue is no longer full, and new items can be added, after the poll operation.
             putCondition.signalAll();
@@ -58,7 +59,7 @@ public class CustomBlockingQueueExampleUsingLock_LinkedList<T> {
             }
             // when there is space, new items can be added.
             System.out.println("Putting value in queue = " + data);
-            queue.offer(data);
+            queue.offer(data); // no need to keep track of putIndex unlike Array impl;
             // signal to take that queue is no longer empty, after adding the item.
             takeCondition.signalAll();
         }finally {
@@ -71,7 +72,8 @@ public class CustomBlockingQueueExampleUsingLock_LinkedList<T> {
         // if the queue is empty, and similarly it blocks all the threads trying to add(Producer) the data to the queue if the queue is full.
         // due to this blocking feature, the queue is known as BlockingQueue.
 
-        CustomBlockingQueueExampleUsingLock_LinkedList<Integer> customBlockingQueueExampleUsingLock = new CustomBlockingQueueExampleUsingLock_LinkedList<>(5);
+        CustomBlockingQueueExampleUsingLock_LinkedList<Integer> customBlockingQueueExampleUsingLock
+                = new CustomBlockingQueueExampleUsingLock_LinkedList<>(5);
 
         Thread consumerThread = new Thread(() -> {
             int i=0;
