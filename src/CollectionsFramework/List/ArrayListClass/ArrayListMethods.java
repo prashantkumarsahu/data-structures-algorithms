@@ -1,4 +1,4 @@
-package src.CollectionsFramework.List.ArrayList;
+package src.CollectionsFramework.List.ArrayListClass;
 
 public class ArrayListMethods {
 

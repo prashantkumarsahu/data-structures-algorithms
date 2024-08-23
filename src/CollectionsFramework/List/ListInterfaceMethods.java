@@ -1,4 +1,4 @@
-package src.CollectionsFramework.List.LinkedList;
+package src.CollectionsFramework.List;
 
 public class ListInterfaceMethods {
 
