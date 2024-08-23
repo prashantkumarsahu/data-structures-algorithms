@@ -1,4 +1,4 @@
-package src.CollectionInterface;
+package src.CollectionsFramework.CollectionInterface;
 
 public class CollectionInterfaceMethods {
 
