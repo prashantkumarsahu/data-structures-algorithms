@@ -6,13 +6,13 @@ public class ArraysMethods {
 
     public static void main(String[] args) {
         int arr[][] = {{1,2,3}, {4,5,6}};
-        int a[] = {9,2,7};
+        int a[] = {2,7,9};
         int b[] = {1,2,7};
 
         Arrays.parallelSort(a,0,3);
 
-        System.out.println(Arrays.binarySearch(a,0,3,9));
-          System.out.println(Arrays.compare(a,b));
+ //       System.out.println(Arrays.binarySearch(a,0,3,9));
+ //         System.out.println(Arrays.compare(a,b));
 //        System.out.println(Arrays.compareUnsigned(a,b));
 //        System.out.println(Arrays.copyOf(a,2));
 //        System.out.println(Arrays.copyOfRange(a,0,1)); // to create subarray of array a from index 0 to 1
@@ -22,8 +22,8 @@ public class ArraysMethods {
 //        System.out.println(Arrays.deepHashCode(a));
 //        System.out.println(Arrays.deepToString(a));
 //        System.out.println(Arrays.equals(a,b));
-//        System.out.println(Arrays.hashCode(a));
-        System.out.println(Arrays.mismatch(a,b));
+        System.out.println(Arrays.hashCode(a)); // produces same result even if elements are in different order, but freq should be same
+//        System.out.println(Arrays.mismatch(a,b));
 //        System.out.println(Arrays.spliterator(a));
 //        System.out.println(Arrays.stream());
 //        System.out.println(Arrays.toString(a));
