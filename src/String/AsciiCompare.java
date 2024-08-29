@@ -16,5 +16,6 @@ public class AsciiCompare {
         while(!pq.isEmpty()){
             System.out.println(pq.poll());
         }
+
     }
 }
